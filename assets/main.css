@@ -156,9 +156,14 @@ pre {
   position: fixed;
   background-color: rgba(250, 250, 250, 0.8);
   z-index: 1;
-  width: 100%; }
+  width: 100%;
+  transition: position 2s; }
+  @media screen and (max-width: 600px) {
+    .site-header {
+      position: relative; } }
 
 .white-bar {
+  transition: background-color 2s ease;
   background-color: #fff; }
 
 .site-title {
@@ -174,9 +179,15 @@ pre {
 .swiper-container {
   height: 600px;
   z-index: 0; }
+  @media screen and (max-width: 600px) {
+    .swiper-container {
+      height: 300px; } }
 
 .language {
   float: right; }
+  @media screen and (max-width: 600px) {
+    .language {
+      float: left; } }
 
 .transparent {
   display: none; }
@@ -194,6 +205,9 @@ pre {
 
 .nadc-logo {
   width: 200px; }
+  @media screen and (max-width: 600px) {
+    .nadc-logo {
+      width: 120px; } }
 
 .logo-spacing {
   margin-top: 20px; }
@@ -315,8 +329,17 @@ pre {
 .page-content {
   padding: 30px 0; }
 
+.page-content-top {
+  padding-top: 120px; }
+  @media screen and (max-width: 800px) {
+    .page-content-top {
+      padding-top: 0; } }
+
 .page-heading {
   font-size: 20px; }
+
+.post-list:before {
+  clear: both; }
 
 .post-list {
   margin-left: 0;
@@ -382,9 +405,10 @@ pre {
   margin-bottom: 30px; }
 
 .post-title {
-  font-size: 42px;
+  font-size: 26px;
   letter-spacing: -1px;
-  line-height: 1; }
+  line-height: 1;
+  padding-top: 30px; }
   @media screen and (max-width: 800px) {
     .post-title {
       font-size: 36px; } }

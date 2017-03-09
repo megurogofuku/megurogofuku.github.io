@@ -3,11 +3,10 @@ $(document).ready(function(){
   $('body').hide().fadeIn(2000);
 });
 
-
 $(document).scroll(function(){
   var scrollTop = $(window).scrollTop();
-  if (scrollTop >= 200){
-    $('.toggler').fadeOut(500);
+  if (scrollTop >= 50){
+    $('.toggler').fadeOut(50);
     $('.site-header').addClass('white-bar');
     $('.nadc-logo').addClass('logo-spacing');
   }
