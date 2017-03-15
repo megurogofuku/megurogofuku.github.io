@@ -118,6 +118,7 @@ pre {
   max-width: calc(1000px - (30px * 2));
   margin-right: auto;
   margin-left: auto;
+  padding-top: 20px;
   padding-right: 30px;
   padding-left: 30px; }
   @media screen and (max-width: 800px) {
@@ -144,9 +145,7 @@ pre {
   .icon > svg path {
     fill: #828282; }
 
-/**
- * Site header
- */
+a
 .clear {
   clear: both; }
 
@@ -205,6 +204,8 @@ pre {
 
 .company-name {
   display: inline-block; }
+  .company-name p {
+    margin-bottom: 0; }
 
 .nadc-logo {
   width: 200px; }
@@ -220,10 +221,14 @@ pre {
   vertical-align: bottom;
   margin-left: 10px; }
 
+.trigger {
+  float: right; }
+
 .site-nav {
-  float: right;
-  line-height: 50px;
-  padding-top: 20px; }
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  padding-bottom: 20px; }
   .site-nav .menu-icon {
     display: none; }
   .site-nav .page-link {
@@ -462,14 +467,28 @@ pre {
       .post-content h4 {
         font-size: 18px; } }
 
+.form-box {
+  width: 500px;
+  margin: 0 auto; }
+  .form-box p {
+    text-align: center; }
+  @media screen and (max-width: 600px) {
+    .form-box {
+      width: 100%; } }
+
+.form-style {
+  width: 100%; }
+
+.form-button {
+  font-weight: 900; }
+
 form {
-  width: 90%; }
+  margin-bottom: 30px; }
   form input, form textarea {
     border: 1px solid #ddd;
     background: #fff;
     padding: 0.9em;
-    transition: all 0.3s ease-in-out;
-    width: 100%; }
+    transition: all 0.3s ease-in-out; }
 
 /**
  * Syntax highlighting styles
