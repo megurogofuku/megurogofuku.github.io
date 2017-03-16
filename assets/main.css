@@ -186,9 +186,8 @@ a
 
 .language {
   float: right; }
-  @media screen and (max-width: 600px) {
-    .language {
-      float: left; } }
+  .language p {
+    margin-bottom: 0; }
 
 .transparent {
   display: none; }
@@ -211,6 +210,7 @@ a
     margin-bottom: 0; }
   @media screen and (max-width: 600px) {
     .company-name {
+      margin-top: 0;
       float: left; } }
 
 .nadc-logo {
@@ -246,12 +246,13 @@ a
   @media screen and (max-width: 600px) {
     .site-nav {
       position: absolute;
-      top: 9px;
+      top: 24px;
       right: 15px;
       background-color: #fdfdfd;
       border: 1px solid #e8e8e8;
       border-radius: 5px;
-      text-align: right; }
+      text-align: right;
+      padding-bottom: 0px; }
       .site-nav .menu-icon {
         display: block;
         float: right;
