@@ -292,6 +292,9 @@ a
   list-style: none;
   margin-left: 0; }
 
+.social-media-list img {
+  width: 40px; }
+
 .footer-col-wrapper {
   font-size: 15px;
   color: #828282;
@@ -354,7 +357,9 @@ a
       padding: 30px 0; } }
 
 .page-content {
-  padding: 30px 0; }
+  padding: 30px 0;
+  background-image: url("/assets/images/washi.jpg");
+  background-size: cover; }
 
 .page-content-top {
   padding-top: 120px; }
