@@ -252,7 +252,8 @@ a
       border: 1px solid #e8e8e8;
       border-radius: 5px;
       text-align: right;
-      padding-bottom: 0px; }
+      padding-bottom: 0px;
+      z-index: 3; }
       .site-nav .menu-icon {
         display: block;
         float: right;
